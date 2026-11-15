@@ -1,6 +1,6 @@
 <div align="center">
 
-# TARGDiff: Time-Adaptive Routing-Gated Diffusion for 3D Point Cloud Completion
+# TARGPoint: Time-Adaptive Routing-Gated Point Diffusion for 3D Point Cloud Completion
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.x-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
@@ -12,14 +12,14 @@
 
 ## Overview
 
-TARGDiff is a diffusion-based framework for completing partial 3D point clouds. This repository provides the model implementation and the tools for dataset preparation, training, evaluation, and inference.
+TARGPoint is a diffusion-based framework for completing partial 3D point clouds. This repository provides the model implementation and the tools for dataset preparation, training, evaluation, and inference.
 
-The repository is intended to accompany the TARGDiff research paper. Author and publication details will be added when they are ready for public release.
+The repository is intended to accompany the TARGPoint research paper. Author and publication details will be added when they are ready for public release.
 
 ## Visual examples
 
 <p align="center">
-  <img src="assets/overview.png" alt="High-level illustration of partial point-cloud completion with TARGDiff" width="96%">
+  <img src="assets/overview.png" alt="High-level illustration of partial point-cloud completion with TARGPoint" width="96%">
 </p>
 <p align="center"><em>High-level illustration of the point-cloud completion task.</em></p>
 
@@ -49,7 +49,7 @@ The repository is intended to accompany the TARGDiff research paper. Author and 
 
 Python 3.10 is recommended. Install a PyTorch version compatible with your operating system, GPU, and CUDA driver by following the [official PyTorch installation guide](https://pytorch.org/get-started/locally/).
 
-Then install TARGDiff:
+Then install TARGPoint:
 
 ```bash
 python -m pip install --upgrade pip
@@ -126,12 +126,12 @@ Add `--normalize-partial` only when normalization is required to match the train
 ## Repository structure
 
 ```text
-TARGDiff/
+TARGPoint/
 ├── assets/       # Selected overview and qualitative figures
 ├── configs/      # Experiment configurations
 ├── data/         # Dataset instructions (data are not included)
 ├── scripts/      # Dataset, training, evaluation, and inference tools
-├── src/targdiff/ # TARGDiff implementation
+├── src/TARGPoint/ # TARGPoint implementation
 ├── tests/        # Automated tests
 ├── README.md
 └── pyproject.toml
